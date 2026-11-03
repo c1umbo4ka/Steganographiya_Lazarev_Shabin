@@ -1,0 +1,316 @@
+﻿{
+  "GeneratorInfo": {
+    "Type": "MSIP",
+    "Count": 1000
+  },
+  "TestResults": {
+    "MonobitTest": {
+      "Passed": false,
+      "Statistics": {
+        "TotalBits": 32000,
+        "OnesCount": 8016,
+        "ZerosCount": 23984,
+        "PValue": 0,
+        "SObs": 89.2638336617916,
+        "SumSn": -15968
+      }
+    },
+    "RunsTest": {
+      "Passed": false,
+      "Statistics": {
+        "OnesCount": 8016,
+        "Pi": 0.2505,
+        "Threshold": 0.011180339887498949,
+        "PiDeviation": 0.2495,
+        "VStatistic": 0,
+        "VObs": 0,
+        "ExpectedRuns": 0,
+        "PValue": 0
+      }
+    },
+    "ChiSquareTest": {
+      "Passed": false,
+      "AlphabetResults": [
+        {
+          "AlphabetBits": 1,
+          "AlphabetSize": 2,
+          "TotalSymbols": 32000,
+          "ExpectedCount": 16000,
+          "ChiSquareStatistic": 7968.032,
+          "DegreesOfFreedom": 1,
+          "ChiSquareCritical": 6.584044726342825,
+          "ApplicabilityWarning": false,
+          "Passed": false,
+          "SkippedReason": null
+        },
+        {
+          "AlphabetBits": 2,
+          "AlphabetSize": 4,
+          "TotalSymbols": 16000,
+          "ExpectedCount": 4000,
+          "ChiSquareStatistic": 8878.18,
+          "DegreesOfFreedom": 3,
+          "ChiSquareCritical": 11.366986501601541,
+          "ApplicabilityWarning": false,
+          "Passed": false,
+          "SkippedReason": null
+        },
+        {
+          "AlphabetBits": 4,
+          "AlphabetSize": 16,
+          "TotalSymbols": 8000,
+          "ExpectedCount": 500,
+          "ChiSquareStatistic": 11315.58,
+          "DegreesOfFreedom": 15,
+          "ChiSquareCritical": 30.602298072097696,
+          "ApplicabilityWarning": false,
+          "Passed": false,
+          "SkippedReason": null
+        },
+        {
+          "AlphabetBits": 8,
+          "AlphabetSize": 256,
+          "TotalSymbols": 4000,
+          "ExpectedCount": 15.625,
+          "ChiSquareStatistic": 19237.248,
+          "DegreesOfFreedom": 255,
+          "ChiSquareCritical": 310.45713868746816,
+          "ApplicabilityWarning": false,
+          "Passed": false,
+          "SkippedReason": null
+        }
+      ]
+    },
+    "AutocorrelationTest": {
+      "Passed": false,
+      "LagResults": [
+        {
+          "Lag": 1,
+          "AD": 12139,
+          "Expected": 15999,
+          "VStatistic": -43.16237655309226,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "Lag": 2,
+          "AD": 12043,
+          "Expected": 15999,
+          "VStatistic": -44.230806829257,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "Lag": 4,
+          "AD": 11917,
+          "Expected": 15998,
+          "VStatistic": -45.62981903369913,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "Lag": 8,
+          "AD": 12004,
+          "Expected": 15996,
+          "VStatistic": -44.63749686677819,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "Lag": 16,
+          "AD": 11942,
+          "Expected": 15992,
+          "VStatistic": -45.29170088531167,
+          "PValue": 0,
+          "Passed": false
+        }
+      ]
+    },
+    "CompressionTest": {
+      "Passed": true,
+      "AlgorithmResults": [
+        {
+          "AlgorithmName": "Deflate",
+          "OriginalSize": 4000,
+          "CompressedSize": 3394,
+          "CompressionRatio": 0.8485,
+          "Tau": 4848,
+          "CriticalValue": 31992.356143810226,
+          "Passed": true
+        },
+        {
+          "AlgorithmName": "GZip",
+          "OriginalSize": 4000,
+          "CompressedSize": 3412,
+          "CompressionRatio": 0.853,
+          "Tau": 4704,
+          "CriticalValue": 31992.356143810226,
+          "Passed": true
+        },
+        {
+          "AlgorithmName": "Brotli",
+          "OriginalSize": 4000,
+          "CompressedSize": 3341,
+          "CompressionRatio": 0.83525,
+          "Tau": 5272,
+          "CriticalValue": 31992.356143810226,
+          "Passed": true
+        }
+      ]
+    },
+    "GCyclePeriodTest": {
+      "Passed": false,
+      "ExperimentResults": [
+        {
+          "AlphabetBits": 1,
+          "AlphabetSize": 2,
+          "Mean": 4.285178470963306,
+          "Min": 2,
+          "Max": 33,
+          "StdDev": 3.212864602970182,
+          "ConfidenceInterval": 0.03520580060678096,
+          "PeriodsCount": 31994,
+          "OverallPassed": false
+        },
+        {
+          "AlphabetBits": 2,
+          "AlphabetSize": 4,
+          "Mean": 19.05151799687011,
+          "Min": 4,
+          "Max": 129,
+          "StdDev": 15.152682715292936,
+          "ConfidenceInterval": 0.23497689867415836,
+          "PeriodsCount": 15975,
+          "OverallPassed": false
+        },
+        {
+          "AlphabetBits": 4,
+          "AlphabetSize": 16,
+          "Mean": 298.7223730127957,
+          "Min": 38,
+          "Max": 1012,
+          "StdDev": 173.57316911830173,
+          "ConfidenceInterval": 3.8676963077325905,
+          "PeriodsCount": 7737,
+          "OverallPassed": false
+        },
+        {
+          "AlphabetBits": 8,
+          "AlphabetSize": 256,
+          "Mean": 0,
+          "Min": 0,
+          "Max": 0,
+          "StdDev": 0,
+          "ConfidenceInterval": 0,
+          "PeriodsCount": 0,
+          "OverallPassed": false
+        }
+      ]
+    },
+    "EntropyTest": {
+      "Passed": false,
+      "BitEntropy": {
+        "TotalBits": 32000,
+        "ZeroCount": 23984,
+        "OneCount": 8016,
+        "P0": 0.7495,
+        "P1": 0.2505,
+        "Entropy": 0.8120696443397666,
+        "MaxEntropy": 1,
+        "Redundancy": 0.18793035566023342,
+        "RelativeEntropy": 0.8120696443397666,
+        "Passed": false
+      },
+      "ByteEntropy": {
+        "TotalBytes": 4000,
+        "BytesPerNumber": 0,
+        "UniqueBytes": 218,
+        "Entropy": 6.442234538999489,
+        "MaxEntropy": 8,
+        "Redundancy": 1.5577654610005114,
+        "RelativeEntropy": 0.8052793173749361,
+        "Coverage": 0.8515625,
+        "Passed": false
+      }
+    },
+    "MoveToFrontTest": {
+      "Passed": false,
+      "AlphabetResults": [
+        {
+          "WordSize": 4,
+          "AlphabetSize": 16,
+          "UpperSetSize": 4,
+          "TotalSymbols": 8000,
+          "CountA1": 4483,
+          "CountA2": 3517,
+          "ChiSquareStatistic": 4110.192666666667,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "WordSize": 8,
+          "AlphabetSize": 256,
+          "UpperSetSize": 16,
+          "TotalSymbols": 4000,
+          "CountA1": 1345,
+          "CountA2": 2655,
+          "ChiSquareStatistic": 5115.84,
+          "PValue": 0,
+          "Passed": false
+        },
+        {
+          "WordSize": 16,
+          "AlphabetSize": 65536,
+          "UpperSetSize": 16,
+          "TotalSymbols": 2000,
+          "CountA1": 43,
+          "CountA2": 1957,
+          "ChiSquareStatistic": 0,
+          "PValue": 0,
+          "Passed": false
+        }
+      ]
+    },
+    "BlockFrequencyTest": {
+      "Passed": false,
+      "BlockSize": 128,
+      "NumberOfBlocks": 250,
+      "ChiSquareStatistic": 8175.9375,
+      "DegreesOfFreedom": 249,
+      "PValue": 0
+    },
+    "LongestRunTest": {
+      "Passed": false,
+      "BlockSize": 128,
+      "NumberOfBlocks": 5,
+      "ChiSquareStatistic": 102.99136069114472,
+      "DegreesOfFreedom": 5,
+      "PValue": 1.2368529433289544E-20
+    },
+    "MatrixRankTest": {
+      "Passed": false,
+      "MatrixSize": 32,
+      "NumberOfMatrices": 0,
+      "RankFull": 0,
+      "RankMinusOne": 0,
+      "RankLess": 0,
+      "ChiSquareStatistic": 0,
+      "DegreesOfFreedom": 0,
+      "PValue": 0
+    },
+    "SpectralTest": {
+      "Passed": false,
+      "SequenceLength": 32000,
+      "Threshold": 383.8820729755428,
+      "ObservedPeaks": 51,
+      "ExpectedPeaks": 800,
+      "PValue": 0
+    },
+    "CusumTest": {
+      "Passed": true,
+      "SequenceLength": 32000,
+      "MaxDeviation": 15968,
+      "PValue": 1
+    }
+  }
+}
